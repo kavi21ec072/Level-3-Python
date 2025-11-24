@@ -1,0 +1,12 @@
+def swapNumbers( no):
+    tens = no//10
+    ones = no %10
+    result = ones*10 +tens
+    return result
+ 
+def main():
+    number1 = int(input("Enter a number: "))
+    result = swapNumbers(number1)
+    print(result)
+if __name__ == "__main__":
+ main()

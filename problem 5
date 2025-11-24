@@ -1,0 +1,14 @@
+def find_number_of_zeros(number):
+    count =0
+    for digit in str(number):
+        if digit == '0':
+            count +=1
+    return count
+     
+def main():
+    number = int(input("enter a number: "))
+    result = find_number_of_zeros(number)
+    print(result)
+
+if __name__ == "__main__":
+    main()

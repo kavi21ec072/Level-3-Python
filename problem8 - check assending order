@@ -1,0 +1,14 @@
+def check_assending( no):
+    no =str(no)
+    for i in range (len(no)-1):
+        if(no[i] > no[i+1]):
+            return "no"
+    return "yes"
+ 
+def main():
+    number1 = int(input("Enter a number: "))
+    result = check_assending(number1)
+    print(result)
+
+if __name__ == "__main__":
+    main()
